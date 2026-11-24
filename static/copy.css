@@ -1,0 +1,9 @@
+/* Click-through copy only: a quiet way back to the review list in the top bar, and the note that saving is off */
+.copy-back{display:inline-flex;align-items:center;height:32px;padding:0 12px;border-radius:8px;border:1px dashed var(--line,#dde3e8);
+  font-size:13px;font-weight:700;color:var(--teal-text,#08555b);text-decoration:none;white-space:nowrap}
+.copy-back:hover,.copy-back:focus-visible{background:var(--teal-100,#e3f4f5);text-decoration:none}
+.copy-toast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%);z-index:80;display:flex;align-items:center;gap:12px;
+  max-width:min(560px,calc(100vw - 32px));padding:12px 16px;border-radius:12px;background:var(--ink,#16202a);color:#fff;
+  font-size:14px;line-height:1.4;box-shadow:0 8px 28px rgba(16,24,40,.22)}
+.copy-toast a{color:#9fe3e8;font-weight:700;white-space:nowrap}
+@media print{.copy-back,.copy-toast{display:none}}

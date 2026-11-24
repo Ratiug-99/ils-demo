@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repair options · ILS Register</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/visbo/visbo.css">
+<script src="static/visbo/visbo.js" defer></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a96a2'/%3E%3Cpath d='M9 22V10h3v12zm5.5 0V10h3v12zm5.5 0V10h3v12z' fill='white'/%3E%3C/svg%3E">
+<meta name="copy-path" content="/repair">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="static/copy.css">
+</head>
+<body>
+
+
+<div class="app">
+<aside class="side" aria-label="Main navigation">
+  <a class="logo" href="dashboard.html"><span class="mark"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /> <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /> <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></svg></span>
+    <span><b>ILS Register</b><small>Logistics support data</small></span></a>
+  <div class="side-label">Overview</div>
+  <nav class="nav">
+    <a href="dashboard.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg><span>Dashboard</span></a>
+  </nav>
+  <div class="side-label">Support analysis</div>
+  <nav class="nav">
+    
+    <a href="config.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><span>Configuration</span><span class="badge" title="46 drafts on this screen">46</span></a>
+    
+    <a href="failures.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="M12 8v4" /> <path d="M12 16h.01" /></svg><span>Failures &amp; hazards</span><span class="badge" title="2 drafts on this screen">2</span></a>
+    
+    <a href="repair.html" class="on"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg><span>Repair options</span><span class="badge" title="1 drafts on this screen">1</span></a>
+    
+    <a href="tasks.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="M12 11h4" /> <path d="M12 16h4" /> <path d="M8 11h.01" /> <path d="M8 16h.01" /></svg><span>Task library</span><span class="badge" title="2 drafts on this screen">2</span></a>
+    
+    <a href="pack.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 2 2 4-4" /> <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" /> <path d="m7.5 4.27 9 5.15" /> <polyline points="3.29 7 12 12 20.71 7" /> <line x1="12" x2="12" y1="22" y2="12" /></svg><span>Provisioning pack</span><span class="badge" title="2 drafts on this screen">2</span></a>
+    
+  </nav>
+  <div class="side-label">VisBo · agent</div>
+  <nav class="nav">
+    <a href="sheets.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="17 8 12 3 7 8" /> <line x1="12" x2="12" y1="3" y2="15" /></svg><span>Import spreadsheet</span></a>
+    <a href="datasheet.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg><span>Datasheet to draft</span><span class="badge" title="proposals waiting for a person">2</span></a>
+    <a href="missing.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4" /> <path d="m3 7 2 2 4-4" /> <path d="M13 6h8" /> <path d="M13 12h8" /> <path d="M13 18h8" /></svg><span>What is missing</span></a>
+  </nav>
+  <div class="side-label">Records</div>
+  <nav class="nav">
+    <a href="review.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg><span>Review queue</span><span class="badge wait" title="53 drafts waiting for approval by a second person">53</span></a>
+    <a href="audit.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /> <path d="M3 3v5h5" /> <path d="M12 7v5l4 2" /></svg><span>Audit trail</span></a>
+  </nav>
+  <div class="side-foot">
+    <div class="asm-card"><b><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Sample register</b>Invented data · v0 draft</div>
+    <div class="made-by"><span>Made by</span><img src="static/visionit-wordmark-ink.svg" alt="VisionIT"></div>
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="dashboard.html"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg></a> <svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg> <b>Repair options</b></nav>
+    <span class="spacer"></span><a class="copy-back" href="index.html" title="Click-through copy of the draft: saving is off">&larr; Review list</a>
+    <button type="button" class="sec sm ask-btn" onclick="askOpen()" aria-controls="askp"><img class="vb-img" src="static/visbo/svg/visbo-idle-eyes-off-light.svg" width="16" height="16" alt=""> Ask VisBo</button>
+    <span class="sample-pill" title="Every part, supplier, figure and document on these screens is invented to show how the register works. Assembly: one motor bogie. No login in v0: pick a name to record who did what."><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 16v-4" /> <path d="M12 8h.01" /></svg> SAMPLE DATA <span>invented figures</span></span>
+    <form class="who " method="post" action="#" data-copy-path="/who">
+      <input type="hidden" name="next" value="/repair?">
+      <input type="hidden" name="other" value="">
+      <span class="avatar " aria-hidden="true">RB</span>
+      <label for="who">Working as</label>
+      <select id="who" name="who" onchange="if(this.value==='__other'){var n=prompt('Your name');if(!n){this.value='Reviewer B (sample)';return;}this.form.other.value=n;}this.form.submit()">
+        <option value="">Choose your name</option>
+        <option >Analyst A (sample)</option><option selected>Reviewer B (sample)</option><option >Engineer C (sample)</option>
+        
+        
+        <option value="__other">Someone else…</option>
+      </select>
+      <noscript><button class="sm sec" type="submit">Set</button></noscript>
+    </form>
+  </header>
+  <main class="content">
+  
+  
+
+<div class="page-head">
+  <div><div class="ph-title"><h1>Repair options</h1><details class="ph-more"><summary><span class="more">More about this screen</span><span class="less">Show less</span></summary></details></div><p class="lead-c">A direct cost comparison: for each position, cost per event × expected removals + one-off cost, at half, one and twice the predicted rate. Not included: spares tied up during turnaround, shared equipment capacity, repair yield. Excluded options are shown but never ranked. The decision is recorded separately and approved by a second person.</p></div>
+  <div class="actions">
+    <details class="menu-d"><summary class="btn ghost"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="7 10 12 15 17 10" /> <line x1="12" x2="12" y1="15" y2="3" /></svg> Export <svg class="i chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></summary>
+  <div class="menu" role="list"><a role="listitem" href="#" data-copy-off="download" data-copy-name="repair_option.csv"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M12 18v-6" /> <path d="m9 15 3 3 3-3" /></svg> Repair options<small>CSV</small></a><a role="listitem" href="#" data-copy-off="download" data-copy-name="repair_decision.csv"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M12 18v-6" /> <path d="m9 15 3 3 3-3" /></svg> Repair decisions<small>CSV</small></a></div></details>
+    <a class="btn sec" href="r-location-new.html"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> Location</a> <a class="btn" href="r-repair_option-new.html"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> Repair option</a>
+  </div>
+</div>
+
+
+<section class="card" style="margin-bottom:16px">
+  <div class="card-head"><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></svg> Support scenario <a class="code" href="r-scenario-SC-001.html">SC-001</a> <span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span></h3>
+    <a class="btn sec sm" href="#" data-copy-off="edit" data-copy-go="r-scenario-new.html"><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /> <path d="m15 5 4 4" /></svg> Edit scenario</a></div>
+  <div class="scen">
+    <div><b>10</b><span>trains in the fleet</span></div>
+    <div><b>400,000</b><span>km per train per year</span></div>
+    <div><b>10 years</b><span>analysis horizon</span></div>
+    <div><b>45 USD</b><span>labour per hour</span></div>
+    <div><b>95.0%</b><span>spares service target</span></div>
+  </div>
+  <p class="small muted" style="margin:12px 0 0">SAMPLE assumptions. 4 motor cars per train, 2 motor bogies each (set on the top position).</p>
+  
+</section>
+
+
+<h2 class="sec"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg> Repair locations <span class="count">3</span></h2>
+<div class="table-card"><table class="compact">
+<thead><tr><th style="width:80px">ID</th><th>Name</th><th>Kind</th><th>What it can do</th><th>Status</th></tr></thead>
+<tbody><tr><td><a class="code" href="r-location-L-001.html">L-001</a></td><td class="t-title">End-station track (line)</td>
+<td><span class="kind"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg> line</span></td><td class="small">Visual checks; swap of small units that need no car lifting.</td><td class="nowrap"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </td></tr><tr><td><a class="code" href="r-location-L-002.html">L-002</a></td><td class="t-title">Main depot workshop</td>
+<td><span class="kind"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg> depot</span></td><td class="small">Pit roads, car lifting, underfloor wheel lathe, brake test bench, general mechanical shop.</td><td class="nowrap"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </td></tr><tr><td><a class="code" href="r-location-L-003.html">L-003</a></td><td class="t-title">Supplier works</td>
+<td><span class="kind"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /> <path d="M17 18h1" /> <path d="M12 18h1" /> <path d="M7 18h1" /></svg> supplier</span></td><td class="small">Overhaul to the supplier&#39;s own procedure; unit returned with a test certificate.</td><td class="nowrap"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </td></tr></tbody>
+</table></div>
+
+<h2 class="sec" id="positions"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg> Options and decisions per position <span class="count">11</span></h2>
+<p class="lead">Per event = new part + external repair + material + transport + labour hours × rate. Bars: total at the predicted rate. Options are assumed to address the same removals. A position whose decision is approved, with nothing else waiting, is folded; open it to see the comparison.</p>
+<nav class="pos-chips" aria-label="Jump to a position">
+<a class="chip ok" href="#pos-POS-007" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Secondary air spring</a><a class="chip ok" href="#pos-POS-014" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Brake caliper unit</a><a class="chip ok" href="#pos-POS-015" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Brake pad</a><a class="chip ok" href="#pos-POS-016" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Earthing brush</a><a class="chip ok" href="#pos-POS-012" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Traction gearbox</a><a class="chip warn" href="#pos-POS-008" title="waiting for a person: decision is a draft"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <line x1="12" x2="12" y1="8" y2="12" /> <line x1="12" x2="12.01" y1="16" y2="16" /></svg> Levelling valve</a><a class="chip ok" href="#pos-POS-017" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Speed sensor</a><a class="chip ok" href="#pos-POS-009" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Secondary vertical damper</a><a class="chip ok" href="#pos-POS-003" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Motor wheelset</a><a class="chip ok" href="#pos-POS-004" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Axle box bearing unit</a><a class="chip ok" href="#pos-POS-011" title="decision approved"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Yaw damper</a>
+</nav>
+<div class="stack">
+
+<details class="card pcard" id="pos-POS-007">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Secondary air spring <span class="code">MB.AS</span></h3>
+    <span class="pc-dec">Decision LD-003: Discard; fit a new air spring</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-007.html">Position MB.AS</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">3.84 per year</b> → 38.4 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip plain">one feasible option</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-005.html" style="color:inherit"><span class="t-title">Discard; fit a new air spring</span></a>
+      <span class="t-sub"><span class="code">RO-005</span> · discard · Main depot workshop</span>
+      
+      </div>
+    <span class="right b">2,035</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>39,072</span><b class="cheap">78,144 · cheapest</b><span>156,288</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row " style="opacity:.55">
+    <div style="min-width:0"><a href="r-repair_option-RO-006.html" style="color:inherit"><span class="t-title">Send to the supplier for re-manufacture</span></a>
+      <span class="t-sub"><span class="code">RO-006</span> · repair · Supplier works · 50 d turnaround</span>
+      <span class="chip bad" style="height:19px;font-size:11px;margin-top:3px">excluded: not ranked</span>
+      <span class="t-sub xs">Supplier does not offer re-manufacture for this type (assumption): not feasible today.</span></div>
+    <span class="right b">1,335</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:32.800982800982794%"></span></div>
+      <div class="nums"><span>25,632</span><b class="">51,264</b><span>102,528</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-003.html">LD-003</a>: Discard; fit a new air spring <span class="code">RO-005</span></b>
+      <div style="margin-top:3px">Re-manufacture is not offered for this type.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-014">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Brake caliper unit <span class="code">MB.BC</span></h3>
+    <span class="pc-dec">Decision LD-008: Overhaul at the depot (seal kit, bench test)</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-014.html">Position MB.BC</a> · 32 per train · 320 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">5.12 per year</b> → 51.2 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip good" title="The cheapest feasible option is the same at ×0.5, ×1 and ×2 the predicted rate."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> same cheapest at ×0.5, ×1, ×2</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-015.html" style="color:inherit"><span class="t-title">Overhaul at the depot (seal kit, bench test)</span></a>
+      <span class="t-sub"><span class="code">RO-015</span> · repair · Main depot workshop · 5 d turnaround</span>
+      
+      <span class="t-sub xs">Brake test bench needed.</span></div>
+    <span class="right b">360</span>
+    <span class="right">8,000</span>
+    <div class="tot"><div class="bar lg"><span style="width:20.3248031496063%"></span></div>
+      <div class="nums"><span>17,216</span><b class="cheap">26,432 · cheapest</b><span>44,864</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-016.html" style="color:inherit"><span class="t-title">Exchange and send to the supplier</span></a>
+      <span class="t-sub"><span class="code">RO-016</span> · repair · Supplier works · 40 d turnaround</span>
+      
+      </div>
+    <span class="right b">1,270</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>32,512</span><b class="">65,024</b><span>130,048</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-008.html">LD-008</a>: Overhaul at the depot (seal kit, bench test) <span class="code">RO-015</span></b>
+      <div style="margin-top:3px">Depot overhaul is cheaper; the bench also serves brake tests.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-015">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Brake pad <span class="code">MB.BC.BP</span></h3>
+    <span class="pc-dec">Decision LD-009: Discard; fit new pads</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-015.html">Position MB.BC.BP</a> · 64 per train · 640 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">5.12 per year</b> → 51.2 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-017.html" style="color:inherit"><span class="t-title">Discard; fit new pads</span></a>
+      <span class="t-sub"><span class="code">RO-017</span> · discard · Main depot workshop</span>
+      
+      </div>
+    <span class="right b">118</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>3,008</span><b class="cheap">6,016 · cheapest</b><span>12,032</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-009.html">LD-009</a>: Discard; fit new pads <span class="code">RO-017</span></b>
+      <div style="margin-top:3px">Wear part.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-016">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Earthing brush <span class="code">MB.EB</span></h3>
+    <span class="pc-dec">Decision LD-010: Discard; fit a new brush</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-016.html">Position MB.EB</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">1.92 per year</b> → 19.2 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-018.html" style="color:inherit"><span class="t-title">Discard; fit a new brush</span></a>
+      <span class="t-sub"><span class="code">RO-018</span> · discard · Main depot workshop</span>
+      
+      </div>
+    <span class="right b">142</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>1,368</span><b class="cheap">2,736 · cheapest</b><span>5,472</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-010.html">LD-010</a>: Discard; fit a new brush <span class="code">RO-018</span></b>
+      <div style="margin-top:3px">Wear part.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-012">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Traction gearbox <span class="code">MB.GB</span></h3>
+    <span class="pc-dec">Decision LD-007: Overhaul at the gearbox supplier</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-012.html">Position MB.GB</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">0.51 per year</b> → 5.1 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip good" title="The cheapest feasible option is the same at ×0.5, ×1 and ×2 the predicted rate."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> same cheapest at ×0.5, ×1, ×2</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-013.html" style="color:inherit"><span class="t-title">Overhaul at the gearbox supplier</span></a>
+      <span class="t-sub"><span class="code">RO-013</span> · repair · Supplier works · 90 d turnaround</span>
+      
+      </div>
+    <span class="right b">10,520</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:48.34836560004596%"></span></div>
+      <div class="nums"><span>26,931</span><b class="cheap">53,862 · cheapest</b><span>107,725</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-014.html" style="color:inherit"><span class="t-title">Overhaul at the depot</span></a>
+      <span class="t-sub"><span class="code">RO-014</span> · repair · Main depot workshop · 20 d turnaround</span>
+      <span class="chip note" style="height:19px;font-size:11px;margin-top:3px">conditional</span>
+      <span class="t-sub xs">Needs a gearbox test stand and trained staff (not available today).</span></div>
+    <span class="right b">5,020</span>
+    <span class="right">60,000</span>
+    <div class="tot"><div class="bar lg"><span style="width:76.9288217383811%"></span></div>
+      <div class="nums"><span>72,851</span><b class="">85,702</b><span>111,405</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-007.html">LD-007</a>: Overhaul at the gearbox supplier <span class="code">RO-013</span></b>
+      <div style="margin-top:3px">No test stand or trained staff at the depot; supplier overhaul is cheaper.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-008" open>
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Levelling valve <span class="code">MB.LV</span></h3>
+    <span class="pc-dec">Decision LD-004: Discard; fit a new valve</span>
+    <span class="pc-st"><span class="chip st st-draft" title="status · revision">draft <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-008.html">Position MB.LV</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">2.56 per year</b> → 25.6 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip note" title="The cheapest option changes with the failure rate; field data matters here."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg> cheapest changes with the rate</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-007.html" style="color:inherit"><span class="t-title">Repair at the depot with a seal kit</span></a>
+      <span class="t-sub"><span class="code">RO-007</span> · repair · Main depot workshop · 5 d turnaround</span>
+      <span class="chip note" style="height:19px;font-size:11px;margin-top:3px">conditional</span>
+      <span class="t-sub xs">Needs a valve test bench.</span></div>
+    <span class="right b">180</span>
+    <span class="right">15,000</span>
+    <div class="tot"><div class="bar lg"><span style="width:55.10341726618705%"></span></div>
+      <div class="nums"><span>17,304</span><b class="">19,608</b><span>24,216</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-008.html" style="color:inherit"><span class="t-title">Discard; fit a new valve</span></a>
+      <span class="t-sub"><span class="code">RO-008</span> · discard · Main depot workshop</span>
+      
+      </div>
+    <span class="right b">695</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>8,896</span><b class="cheap">17,792 · cheapest</b><span>35,584</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision draft"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.1 2.182a10 10 0 0 1 3.8 0" /> <path d="M13.9 21.818a10 10 0 0 1-3.8 0" /> <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7" /> <path d="M2.182 13.9a10 10 0 0 1 0-3.8" /> <path d="M20.279 17.609a10 10 0 0 1-2.7 2.69" /> <path d="M21.818 10.1a10 10 0 0 1 0 3.8" /> <path d="M3.721 6.391a10 10 0 0 1 2.7-2.69" /> <path d="M6.391 20.279a10 10 0 0 1-2.69-2.7" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-004.html">LD-004</a>: Discard; fit a new valve <span class="code">RO-008</span></b>
+      <div style="margin-top:3px">Few failures expected; a test bench is not worth buying. Revisit with field data.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="chip st st-draft" title="status · revision">draft <span class="rev">· r1</span></span> <form method="post" action="#" data-copy-path="/r/repair_decision/LD-004/approve" style="display:inline-flex"><input type="hidden" name="next" value="/repair?"><button class="xs approve" type="submit" title="Approve rev 1 (the approver must not be the author)"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Approve</button></form></div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-017">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Speed sensor <span class="code">MB.SS</span></h3>
+    <span class="pc-dec">Decision LD-011: Discard; fit a new sensor at the line</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-017.html">Position MB.SS</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">7.68 per year</b> → 76.8 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-019.html" style="color:inherit"><span class="t-title">Discard; fit a new sensor at the line</span></a>
+      <span class="t-sub"><span class="code">RO-019</span> · discard · End-station track (line)</span>
+      
+      </div>
+    <span class="right b">365</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:49.99999999999999%"></span></div>
+      <div class="nums"><span>14,016</span><b class="cheap">28,032 · cheapest</b><span>56,064</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-011.html">LD-011</a>: Discard; fit a new sensor at the line <span class="code">RO-019</span></b>
+      <div style="margin-top:3px">Low-cost sensor; swap at the line.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-009">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Secondary vertical damper <span class="code">MB.VD</span></h3>
+    <span class="pc-dec">Decision LD-005: Overhaul at the damper supplier</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-009.html">Position MB.VD</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">5.12 per year</b> → 51.2 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip good" title="The cheapest feasible option is the same at ×0.5, ×1 and ×2 the predicted rate."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> same cheapest at ×0.5, ×1, ×2</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-009.html" style="color:inherit"><span class="t-title">Overhaul at the damper supplier</span></a>
+      <span class="t-sub"><span class="code">RO-009</span> · repair · Supplier works · 30 d turnaround</span>
+      
+      </div>
+    <span class="right b">485</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:48.58350289560182%"></span></div>
+      <div class="nums"><span>12,416</span><b class="cheap">24,832 · cheapest</b><span>49,664</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-010.html" style="color:inherit"><span class="t-title">Overhaul at the depot on our own test rig</span></a>
+      <span class="t-sub"><span class="code">RO-010</span> · repair · Main depot workshop · 7 d turnaround</span>
+      <span class="chip note" style="height:19px;font-size:11px;margin-top:3px">conditional</span>
+      <span class="t-sub xs">Needs a damper test rig and trained staff.</span></div>
+    <span class="right b">255</span>
+    <span class="right">25,000</span>
+    <div class="tot"><div class="bar lg"><span style="width:74.45609641571451%"></span></div>
+      <div class="nums"><span>31,528</span><b class="">38,056</b><span>51,112</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-005.html">LD-005</a>: Overhaul at the damper supplier <span class="code">RO-009</span></b>
+      <div style="margin-top:3px">Supplier overhaul is cheaper than buying a test rig at the predicted rate.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-003">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Motor wheelset <span class="code">MB.WS</span></h3>
+    <span class="pc-dec">Decision LD-001: Reprofile on the depot underfloor lathe (no removal)</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-003.html">Position MB.WS</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">3.84 per year</b> → 38.4 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip good" title="The cheapest feasible option is the same at ×0.5, ×1 and ×2 the predicted rate."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> same cheapest at ×0.5, ×1, ×2</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-001.html" style="color:inherit"><span class="t-title">Reprofile on the depot underfloor lathe (no removal)</span></a>
+      <span class="t-sub"><span class="code">RO-001</span> · repair · Main depot workshop · 1 d turnaround</span>
+      
+      <span class="t-sub xs">Lathe exists at the depot (assumed). Wheel diameter must stay above the scrap limit.</span></div>
+    <span class="right b">270</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:2.1634615384615383%"></span></div>
+      <div class="nums"><span>5,184</span><b class="cheap">10,368 · cheapest</b><span>20,736</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-002.html" style="color:inherit"><span class="t-title">Exchange the wheelset; supplier reprofiles or re-wheels</span></a>
+      <span class="t-sub"><span class="code">RO-002</span> · repair · Supplier works · 45 d turnaround</span>
+      
+      <span class="t-sub xs">Needs car lifting and a spare wheelset.</span></div>
+    <span class="right b">6,240</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>119,808</span><b class="">239,616</b><span>479,232</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-001.html">LD-001</a>: Reprofile on the depot underfloor lathe (no removal) <span class="code">RO-001</span></b>
+      <div style="margin-top:3px">Cheapest at every failure rate tested; no spare wheelset tied up in transport.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-004">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Axle box bearing unit <span class="code">MB.WS.BRG</span></h3>
+    <span class="pc-dec">Decision LD-002: Discard; fit a new bearing unit</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-004.html">Position MB.WS.BRG</a> · 32 per train · 320 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">8.96 per year</b> → 89.6 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip good" title="The cheapest feasible option is the same at ×0.5, ×1 and ×2 the predicted rate."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> same cheapest at ×0.5, ×1, ×2</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-003.html" style="color:inherit"><span class="t-title">Discard; fit a new bearing unit</span></a>
+      <span class="t-sub"><span class="code">RO-003</span> · discard · Main depot workshop</span>
+      
+      </div>
+    <span class="right b">3,160</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>141,568</span><b class="">283,136</b><span>566,272</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-004.html" style="color:inherit"><span class="t-title">Refurbish at the bearing supplier</span></a>
+      <span class="t-sub"><span class="code">RO-004</span> · repair · Supplier works · 60 d turnaround</span>
+      
+      <span class="t-sub xs">Only units removed without raceway damage; the supplier decides. Share of repairable units not known (not modelled in v0).</span></div>
+    <span class="right b">1,410</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:22.310126582278485%"></span></div>
+      <div class="nums"><span>63,168</span><b class="cheap">126,336 · cheapest</b><span>252,672</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-002.html">LD-002</a>: Discard; fit a new bearing unit <span class="code">RO-003</span></b>
+      <div style="margin-top:3px">Safety-relevant item. Refurbishment looks cheaper, but only if most removed units can be refurbished, which the supplier has not shown. Revisit with field data.</div>
+      <span class="chip note" style="margin-top:6px"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 16v-4" /> <path d="M12 8h.01" /></svg> not the cheapest feasible option at the predicted rate: see the reason</span>
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+<details class="card pcard" id="pos-POS-011">
+  <summary><svg class="i chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Yaw damper <span class="code">MB.YD</span></h3>
+    <span class="pc-dec">Decision LD-006: Overhaul at the damper supplier</span>
+    <span class="pc-st"><span class="st-ok word" title="approved · revision 1">approved <span class="rev">· r1</span></span></span></summary>
+  <div class="pc-body">
+  <div class="pc-meta">
+    <div class="small muted"><a href="r-position-POS-011.html">Position MB.YD</a> · 16 per train · 160 in fleet · predicted removals <b class="nowrap" style="color:var(--teal-text)">3.20 per year</b> → 32.0 over 10 years</div>
+    <div class="actions" style="margin:0;flex-wrap:nowrap">
+      <span class="chip good" title="The cheapest feasible option is the same at ×0.5, ×1 and ×2 the predicted rate."><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> same cheapest at ×0.5, ×1, ×2</span>
+      <a class="btn ghost xs" href="r-repair_option-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> option</a>
+    </div>
+  </div>
+  
+  
+  
+  <div class="cost-row head"><span>Option</span><span class="right">Per event</span><span class="right">One-off</span><span>Total over 10 years (USD) at ×0.5 · ×1 · ×2 rate</span><span class="right">Status</span></div>
+  
+  <div class="cost-row is-cheap" style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-011.html" style="color:inherit"><span class="t-title">Overhaul at the damper supplier</span></a>
+      <span class="t-sub"><span class="code">RO-011</span> · repair · Supplier works · 30 d turnaround</span>
+      
+      </div>
+    <span class="right b">648</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:22.061328790459967%"></span></div>
+      <div class="nums"><span>10,360</span><b class="cheap">20,720 · cheapest</b><span>41,440</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  <div class="cost-row " style="">
+    <div style="min-width:0"><a href="r-repair_option-RO-012.html" style="color:inherit"><span class="t-title">Discard; fit a new yaw damper</span></a>
+      <span class="t-sub"><span class="code">RO-012</span> · discard · Main depot workshop</span>
+      
+      </div>
+    <span class="right b">1,468</span>
+    <span class="right">0</span>
+    <div class="tot"><div class="bar lg"><span style="width:50.0%"></span></div>
+      <div class="nums"><span>23,480</span><b class="">46,960</b><span>93,920</span></div></div>
+    <div class="right"><div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></div>
+  </div>
+  
+  
+  
+  <div class="decision approved"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg>
+    <div style="flex:1"><b>Decision <a href="r-repair_decision-LD-006.html">LD-006</a>: Overhaul at the damper supplier <span class="code">RO-011</span></b>
+      <div style="margin-top:3px">Overhaul costs about a third of a new damper.</div>
+      
+      </div>
+    <div class="cell-stack" style="align-items:flex-end"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div>
+  </div>
+  
+  </div>
+</details>
+
+</div>
+
+  </main>
+</div>
+</div>
+<aside class="askp" id="askp" aria-label="Ask VisBo" hidden>
+  <div class="askp-head"><div class="askp-id"><visbo-mark id="vb-ask" state="idle" size="40" eyes="off" theme="light" label="VisBo: idle"></visbo-mark><div><b>Ask VisBo</b><span class="askp-st" id="vb-ask-st" aria-live="polite">Ready</span></div></div>
+    <div class="askp-tools"><button type="button" class="ghost xs btn" id="askp-new" onclick="askNew()" hidden><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> New question</button>
+    <button type="button" class="ghost xs btn" onclick="askClose()" aria-label="Close"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg></button></div></div>
+  <div class="askp-out" id="askout">
+    <div class="askp-empty" id="askp-empty">
+      <p class="askp-hello"><b>Ask about this register.</b> VisBo answers from the records only and shows which ones it used.</p>
+      <div class="askp-cards"><button type="button" class="askp-card" data-ask="What is missing for the motor bogie?"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4" /> <path d="m3 7 2 2 4-4" /> <path d="M13 6h8" /> <path d="M13 12h8" /> <path d="M13 18h8" /></svg><span>What is missing for the motor bogie?</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button><button type="button" class="askp-card" data-ask="Which parts fail more often than predicted?"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg><span>Which parts fail more often than predicted?</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button><button type="button" class="askp-card" data-ask="What waits for approval?"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg><span>What waits for approval?</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button><button type="button" class="askp-card" data-ask="Tell me about BRG-130"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /></svg><span>Tell me about BRG-130</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button></div>
+    </div>
+    <div id="askthread" aria-live="polite"></div>
+  </div>
+  <form class="askp-form" action="#" data-copy-path="/ask" method="get" onsubmit="return askSend(this)">
+    <input type="hidden" name="page" value="/repair">
+    <input type="text" name="q" id="askq" placeholder="Ask about a part, a gap or a figure…" aria-label="Your question" autocomplete="off">
+    <button type="submit" class="sm" aria-label="Ask"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button>
+  </form>
+  <p class="askp-foot">Answers come from the register only. VisBo never approves or decides.</p>
+</aside>
+<div class="vb-toast" id="vb-toast" role="status" hidden><visbo-mark state="working" size="24" eyes="off" theme="light" label="VisBo is working"></visbo-mark><span></span></div>
+<script>
+window.VISBO_EYES='off';
+/* the import helper and datasheet drafting: while the server reads the file, VisBo shows it is working */
+document.addEventListener('submit',function(e){var f=e.target;if(!f.matches('form[data-vb-read]')||e.defaultPrevented)return;
+  var fi=f.querySelector('input[type=file]'),sm=f.querySelector('input[name=sample]'),n=(fi&&fi.files[0]&&fi.files[0].name)||(sm&&sm.value);if(!n)return;
+  var t=document.getElementById('vb-toast');t.querySelector('span').innerHTML='<b>VisBo is reading</b> '+n.replace(/[<>&]/g,'')+'…';t.hidden=false;});
+window.addEventListener('pageshow',function(){var t=document.getElementById('vb-toast');if(t)t.hidden=true;});
+/* Ask VisBo: a short thread kept for this browser tab; answers come from the server (or, in the click-through copy, from askFetch) */
+var ASK_KEY='ils-ask-thread';
+function askVb(st,words){var m=document.getElementById('vb-ask'),t=document.getElementById('vb-ask-st');if(m){m.setAttribute('state',st);m.setAttribute('label','VisBo: '+words);}if(t)t.textContent=words;}
+function askStore(){try{var th=document.getElementById('askthread');sessionStorage.setItem(ASK_KEY,th.innerHTML);}catch(e){}}
+function askShow(){var th=document.getElementById('askthread'),has=!!th.querySelector('.vb-turn');document.getElementById('askp-empty').hidden=has;document.getElementById('askp-new').hidden=!has;}
+function askOpen(){var p=document.getElementById('askp');p.hidden=false;askVb('listening','Listening');document.getElementById('askq').focus();}
+function askClose(){document.getElementById('askp').hidden=true;}
+function askNew(){document.getElementById('askthread').innerHTML='';askStore();askShow();askVb('listening','Listening');document.getElementById('askq').focus();}
+function askEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function askFetchServer(q,page){var f=document.querySelector('.askp-form');
+  return fetch(f.getAttribute('action')+'?fragment=1&page='+encodeURIComponent(page||'')+'&q='+encodeURIComponent(q)).then(function(r){if(!r.ok)throw r;return r.text();});}
+function askRun(q){var th=document.getElementById('askthread'),f=document.querySelector('.askp-form'),turn=document.createElement('div');
+  turn.className='vb-turn vb-wait';
+  turn.innerHTML='<div class="vb-q"><span>'+askEsc(q)+'</span></div><div class="vb-a vb-thinking"><visbo-mark state="thinking" size="16" eyes="'+(window.VISBO_EYES||'off')+'" theme="light" label="VisBo: thinking"></visbo-mark> Looking in the register…</div>';
+  th.appendChild(turn);askShow();turn.scrollIntoView({block:'start'});askVb('thinking','Thinking: looking in the register…');
+  (window.askFetch||askFetchServer)(q,f.page.value).then(function(html){
+    var box=document.createElement('div');box.innerHTML=html;var t=box.querySelector('.vb-turn')||box;turn.replaceWith(t);t.scrollIntoView({block:'start'});
+    askStore();askVb('done','Done: answer below');
+    setTimeout(function(){var m=document.getElementById('vb-ask');if(m&&m.getAttribute('state')==='done')askVb('idle','Ready');},4000);
+  }).catch(function(){turn.classList.remove('vb-wait');turn.querySelector('.vb-a').className='vb-a vb-err';turn.querySelector('.vb-a').textContent='Could not reach the server. Try again in a moment.';askVb('error','Could not reach the server');});}
+function askSend(f){var q=f.q.value.trim();if(!q)return false;f.q.value='';askRun(q);return false;}
+document.addEventListener('click',function(e){var p=document.getElementById('askp');if(!p||!p.contains(e.target))return;
+  var b=e.target.closest('[data-ask]');if(b){e.preventDefault();askRun(b.getAttribute('data-ask'));return;}
+  var a=e.target.closest('a[href]');if(a&&!a.hasAttribute('data-copy-off')){try{sessionStorage.setItem(ASK_KEY+'-open','1');}catch(x){}}});
+(function(){var th=document.getElementById('askthread');if(!th)return;var h='',open='';
+  try{h=sessionStorage.getItem(ASK_KEY)||'';open=sessionStorage.getItem(ASK_KEY+'-open')||'';sessionStorage.removeItem(ASK_KEY+'-open');}catch(e){}
+  th.innerHTML=h;th.querySelectorAll('.vb-wait').forEach(function(t){t.remove();});askShow();
+  if(open){document.getElementById('askp').hidden=false;askVb('idle','Ready');var last=th.querySelector('.vb-turn:last-child');if(last)last.scrollIntoView({block:'start'});}})();
+document.addEventListener('keydown',function(e){if(e.key==='Escape')askClose();});
+</script>
+<div class="copy-toast" id="copy-toast" role="status" hidden></div><script src="static/copy-data.js"></script><script src="static/copy.js"></script>
+</body></html>

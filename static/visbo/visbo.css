@@ -1,0 +1,8 @@
+/* VisBo helpers (optional). The mark itself needs only visbo.js. */
+visbo-mark{display:inline-block;vertical-align:middle;line-height:0}
+.visbo-by{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:#08555b}
+.visbo-by.is-needs{color:#9a4315}
+.dark .visbo-by,[data-theme=dark] .visbo-by{color:#86d9e0}
+.dark .visbo-by.is-needs,[data-theme=dark] .visbo-by.is-needs{color:#f6b08c}
+/* Colour overrides, if a product needs its own tones: */
+/* visbo-mark{--visbo-body:#0a96a2;--visbo-core:#de6f38;--visbo-glow:#5fd3dc;--visbo-eyes:#17323a} */

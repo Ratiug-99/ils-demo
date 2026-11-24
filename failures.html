@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Failures and hazards · ILS Register</title>
+<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" href="static/visbo/visbo.css">
+<script src="static/visbo/visbo.js" defer></script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a96a2'/%3E%3Cpath d='M9 22V10h3v12zm5.5 0V10h3v12zm5.5 0V10h3v12z' fill='white'/%3E%3C/svg%3E">
+<meta name="copy-path" content="/failures">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="static/copy.css">
+</head>
+<body>
+
+
+<div class="app">
+<aside class="side" aria-label="Main navigation">
+  <a class="logo" href="dashboard.html"><span class="mark"><svg class="i " width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" /> <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" /> <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" /></svg></span>
+    <span><b>ILS Register</b><small>Logistics support data</small></span></a>
+  <div class="side-label">Overview</div>
+  <nav class="nav">
+    <a href="dashboard.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg><span>Dashboard</span></a>
+  </nav>
+  <div class="side-label">Support analysis</div>
+  <nav class="nav">
+    
+    <a href="config.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><span>Configuration</span><span class="badge" title="46 drafts on this screen">46</span></a>
+    
+    <a href="failures.html" class="on"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="M12 8v4" /> <path d="M12 16h.01" /></svg><span>Failures &amp; hazards</span><span class="badge" title="2 drafts on this screen">2</span></a>
+    
+    <a href="repair.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg><span>Repair options</span><span class="badge" title="1 drafts on this screen">1</span></a>
+    
+    <a href="tasks.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="M12 11h4" /> <path d="M12 16h4" /> <path d="M8 11h.01" /> <path d="M8 16h.01" /></svg><span>Task library</span><span class="badge" title="2 drafts on this screen">2</span></a>
+    
+    <a href="pack.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 16 2 2 4-4" /> <path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14" /> <path d="m7.5 4.27 9 5.15" /> <polyline points="3.29 7 12 12 20.71 7" /> <line x1="12" x2="12" y1="22" y2="12" /></svg><span>Provisioning pack</span><span class="badge" title="2 drafts on this screen">2</span></a>
+    
+  </nav>
+  <div class="side-label">VisBo · agent</div>
+  <nav class="nav">
+    <a href="sheets.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="17 8 12 3 7 8" /> <line x1="12" x2="12" y1="3" y2="15" /></svg><span>Import spreadsheet</span></a>
+    <a href="datasheet.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg><span>Datasheet to draft</span><span class="badge" title="proposals waiting for a person">2</span></a>
+    <a href="missing.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4" /> <path d="m3 7 2 2 4-4" /> <path d="M13 6h8" /> <path d="M13 12h8" /> <path d="M13 18h8" /></svg><span>What is missing</span></a>
+  </nav>
+  <div class="side-label">Records</div>
+  <nav class="nav">
+    <a href="review.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg><span>Review queue</span><span class="badge wait" title="53 drafts waiting for approval by a second person">53</span></a>
+    <a href="audit.html" class=""><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /> <path d="M3 3v5h5" /> <path d="M12 7v5l4 2" /></svg><span>Audit trail</span></a>
+  </nav>
+  <div class="side-foot">
+    <div class="asm-card"><b><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg> Sample register</b>Invented data · v0 draft</div>
+    <div class="made-by"><span>Made by</span><img src="static/visionit-wordmark-ink.svg" alt="VisionIT"></div>
+  </div>
+</aside>
+<div class="main">
+  <header class="top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="dashboard.html"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg></a> <svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg> <b>Failures &amp; hazards</b></nav>
+    <span class="spacer"></span><a class="copy-back" href="index.html" title="Click-through copy of the draft: saving is off">&larr; Review list</a>
+    <button type="button" class="sec sm ask-btn" onclick="askOpen()" aria-controls="askp"><img class="vb-img" src="static/visbo/svg/visbo-idle-eyes-off-light.svg" width="16" height="16" alt=""> Ask VisBo</button>
+    <span class="sample-pill" title="Every part, supplier, figure and document on these screens is invented to show how the register works. Assembly: one motor bogie. No login in v0: pick a name to record who did what."><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="M12 16v-4" /> <path d="M12 8h.01" /></svg> SAMPLE DATA <span>invented figures</span></span>
+    <form class="who " method="post" action="#" data-copy-path="/who">
+      <input type="hidden" name="next" value="/failures?">
+      <input type="hidden" name="other" value="">
+      <span class="avatar " aria-hidden="true">RB</span>
+      <label for="who">Working as</label>
+      <select id="who" name="who" onchange="if(this.value==='__other'){var n=prompt('Your name');if(!n){this.value='Reviewer B (sample)';return;}this.form.other.value=n;}this.form.submit()">
+        <option value="">Choose your name</option>
+        <option >Analyst A (sample)</option><option selected>Reviewer B (sample)</option><option >Engineer C (sample)</option>
+        
+        
+        <option value="__other">Someone else…</option>
+      </select>
+      <noscript><button class="sm sec" type="submit">Set</button></noscript>
+    </form>
+  </header>
+  <main class="content">
+  
+  
+
+<div class="page-head">
+  <div><div class="ph-title"><h1>Failure and hazard sheet</h1></div><p class="lead-c">Several failure modes per position. Predicted figures come from design and supplier data; observed figures come only from imported field data and never overwrite the prediction.</p></div>
+  <div class="actions">
+    <details class="menu-d"><summary class="btn ghost"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /> <polyline points="7 10 12 15 17 10" /> <line x1="12" x2="12" y1="15" y2="3" /></svg> Export <svg class="i chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></summary>
+  <div class="menu" role="list"><a role="listitem" href="#" data-copy-off="download" data-copy-name="failure_mode.csv"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M12 18v-6" /> <path d="m9 15 3 3 3-3" /></svg> Failure modes<small>CSV</small></a><a role="listitem" href="#" data-copy-off="download" data-copy-name="hazard.csv"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M12 18v-6" /> <path d="m9 15 3 3 3-3" /></svg> Hazards<small>CSV</small></a></div></details>
+    <a class="btn sec" href="r-hazard-new.html"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> Hazard</a> <a class="btn" href="r-failure_mode-new.html"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> Failure mode</a>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="stat"><span class="ic "><svg class="i " width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg></span><div><b>15</b><span>failure modes</span></div></div>
+  <div class="stat"><span class="ic bad"><svg class="i " width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /></svg></span><div><b>3</b><span>catastrophic or critical</span></div></div>
+  <div class="stat"><span class="ic o"><svg class="i " width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="M12 8v4" /> <path d="M12 16h.01" /></svg></span><div><b>3</b><span>hazards · 2 not accepted</span></div></div>
+  <div class="stat"><span class="ic "><svg class="i " width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></svg></span><div><b>5</b><span>with field data</span></div></div>
+  <div class="stat"><span class="ic o"><svg class="i " width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.1 2.182a10 10 0 0 1 3.8 0" /> <path d="M13.9 21.818a10 10 0 0 1-3.8 0" /> <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7" /> <path d="M2.182 13.9a10 10 0 0 1 0-3.8" /> <path d="M20.279 17.609a10 10 0 0 1-2.7 2.69" /> <path d="M21.818 10.1a10 10 0 0 1 0 3.8" /> <path d="M3.721 6.391a10 10 0 0 1 2.7-2.69" /> <path d="M6.391 20.279a10 10 0 0 1-2.69-2.7" /></svg></span><div><b>2</b><span>waiting for approval</span></div></div>
+</div>
+
+
+<div class="callout warn"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.1 2.182a10 10 0 0 1 3.8 0" /> <path d="M13.9 21.818a10 10 0 0 1-3.8 0" /> <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7" /> <path d="M2.182 13.9a10 10 0 0 1 0-3.8" /> <path d="M20.279 17.609a10 10 0 0 1-2.7 2.69" /> <path d="M21.818 10.1a10 10 0 0 1 0 3.8" /> <path d="M3.721 6.391a10 10 0 0 1 2.7-2.69" /> <path d="M6.391 20.279a10 10 0 0 1-2.69-2.7" /></svg><div><b>Waiting for approval:</b> <a href="r-failure_mode-FM-010.html">FM-010 · Gear or gearbox bearing damage</a> · <a href="r-hazard-HZ-003.html">HZ-003 · Bogie hunting at high speed</a></div></div>
+
+<section class="card" id="pvo" style="margin-bottom:22px">
+  <div class="card-head"><h3><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /></svg> Predicted vs observed, where field data exists</h3>
+    <span class="legend"><span><i></i>predicted</span><span><i class="o"></i>observed</span><span class="muted">failures per million item-km</span></span></div>
+  
+  <div class="grid g2" style="gap:0 36px">
+  
+    <div class="pvo-row">
+      <div class="what"><b>Axle box bearing unit</b><span><a class="code" href="r-failure_mode-FM-001.html">FM-001</a> Bearing overheats or seizes</span></div>
+      <div class="pvo-bars">
+        <div class="ln p"><div class="bar"><span style="width:11.733333333333334%"></span></div><span class="v">0.020</span></div>
+        <div class="ln o"><div class="bar o"><span style="width:0%"></span></div><span class="v none" title="no events observed: see the chip">—</span></div>
+      </div>
+      <div class="ratio"><span class="chip plain" title="2026-01-01 to 2026-10-31">none observed</span><span class="xs muted" style="display:block;text-align:right;margin-top:3px">≤ 0.028 (90%)</span>
+</div>
+    </div>
+  
+    <div class="pvo-row">
+      <div class="what"><b>Axle box bearing unit</b><span><a class="code" href="r-failure_mode-FM-002.html">FM-002</a> Spalling or noise found at inspection</span></div>
+      <div class="pvo-bars">
+        <div class="ln p"><div class="bar"><span style="width:29.333333333333336%"></span></div><span class="v">0.050</span></div>
+        <div class="ln o"><div class="bar o"><span style="width:5.555555555555556%"></span></div><span class="v">0.009</span></div>
+      </div>
+      <div class="ratio">
+<span class="chip good" title="1 confirmed events; 90% band 0.000–0.045; 2026-01-01 to 2026-10-31"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7" /> <polyline points="16 17 22 17 22 11" /></svg> better</span>
+<span class="xs muted" style="display:block;text-align:right;margin-top:3px">1 event · 0.000–0.045</span></div>
+    </div>
+  
+    <div class="pvo-row">
+      <div class="what"><b>Secondary air spring</b><span><a class="code" href="r-failure_mode-FM-005.html">FM-005</a> Bellows leak or burst</span></div>
+      <div class="pvo-bars">
+        <div class="ln p"><div class="bar"><span style="width:35.2%"></span></div><span class="v">0.060</span></div>
+        <div class="ln o"><div class="bar o"><span style="width:44.44444444444445%"></span></div><span class="v">0.076</span></div>
+      </div>
+      <div class="ratio">
+<span class="chip plain" title="4 confirmed events; 90% band 0.026–0.173; 2026-01-01 to 2026-10-31"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg> as predicted</span>
+<span class="xs muted" style="display:block;text-align:right;margin-top:3px">4 events · 0.026–0.173</span></div>
+    </div>
+  
+    <div class="pvo-row">
+      <div class="what"><b>Yaw damper</b><span><a class="code" href="r-failure_mode-FM-008.html">FM-008</a> Loss of yaw damping</span></div>
+      <div class="pvo-bars">
+        <div class="ln p"><div class="bar"><span style="width:29.333333333333336%"></span></div><span class="v">0.050</span></div>
+        <div class="ln o"><div class="bar o"><span style="width:0%"></span></div><span class="v none" title="no events observed: see the chip">—</span></div>
+      </div>
+      <div class="ratio"><span class="chip plain" title="2026-01-01 to 2026-10-31">none observed</span><span class="xs muted" style="display:block;text-align:right;margin-top:3px">≤ 0.057 (90%)</span>
+</div>
+    </div>
+  
+    <div class="pvo-row">
+      <div class="what"><b>Speed sensor</b><span><a class="code" href="r-failure_mode-FM-015.html">FM-015</a> No signal or erratic signal</span></div>
+      <div class="pvo-bars">
+        <div class="ln p"><div class="bar"><span style="width:70.4%"></span></div><span class="v">0.120</span></div>
+        <div class="ln o"><div class="bar o"><span style="width:100.0%"></span></div><span class="v">0.170</span></div>
+      </div>
+      <div class="ratio">
+<span class="chip plain" title="9 confirmed events; 90% band 0.089–0.297; 2026-01-01 to 2026-10-31"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg> as predicted</span>
+<span class="xs muted" style="display:block;text-align:right;margin-top:3px">9 events · 0.089–0.297</span></div>
+    </div>
+  
+  </div>
+  
+</section>
+
+<h2 class="sec"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg> Failure modes <span class="count">15</span></h2>
+<p class="lead">A rate is shown only when exposure (item-km) was imported: a raw count gives no rate. The contract's failure category (A/B) and the analyst's severity are separate fields.</p><div class="table-card"><table class="compact fm-t">
+<thead>
+<tr><th rowspan="2" style="width:58px">ID</th><th rowspan="2" class="fm-col">Failure mode · cause</th><th rowspan="2">Effects · detection</th><th rowspan="2">Class</th>
+  <th colspan="2" class="g-pred c basis-col">Predicted (design)</th><th class="g-pred c basis-2h">Predicted (design)</th>
+  <th colspan="3" class="g-obs c basis-col">Observed (field data)</th><th colspan="2" class="g-obs c basis-2h">Observed (field data)</th><th rowspan="2">Status</th></tr>
+<tr><th class="n pred" style="top:calc(var(--top) + 35px)">Rate</th><th class="pred basis-col" style="top:calc(var(--top) + 35px)">Predicted basis</th>
+  <th class="n obs" style="top:calc(var(--top) + 35px)">Observed<br>events</th><th class="n obs" style="top:calc(var(--top) + 35px)">Rate</th><th class="obs basis-col" style="top:calc(var(--top) + 35px)">Observed basis</th></tr>
+</thead>
+<tbody>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-007.html">Secondary air spring</a><span class="code">MB.AS</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-005.html">FM-005</a></td>
+  <td class="fm-col"><div class="clamp3" title="Bellows leak or burst: Rubber ageing; puncture by debris"><span class="t-title">Bellows leak or burst</span><br><span class="cause">Rubber ageing; puncture by debris</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Air lost from one spring → Car runs on the emergency spring with a speed restriction (assumed)">Air lost from one spring <span class="muted">→ Car runs on the emergency spring with a speed restriction (assumed)</span></span>
+    <span class="clamp1 muted" title="Detection: Air pressure monitoring in TCMS; A inspection"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Air pressure monitoring in TCMS; A inspection</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.060</b><span class="minibar"><span style="width:35.2%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per spring-km; supplier endurance test (sample)">Per spring-km; supplier endurance test (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per spring-km; supplier endurance test (sample)">Per spring-km; supplier endurance test (sample)</span></td>
+  <td class="n obs">4</td>
+  <td class="n obs rate"><span class="band" title="90% confidence band of the observed rate">0.03–0.17</span><b>0.076</b><span class="minibar o"><span style="width:44.44444444444445%"></span></span>
+    <span class="basis-2" title="Observed basis: 52.8 M item-km · 2026-01-01 to 2026-10-31">52.8 M item-km · 2026-01-01 to 2026-10-31</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="52.8 M item-km · 2026-01-01 to 2026-10-31">2026-01-01 to 2026-10-31</span><span class="t-sub">52.8 M item-km</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-014.html">Brake caliper unit</a><span class="code">MB.BC</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-011.html">FM-011</a></td>
+  <td class="fm-col"><div class="clamp3" title="Caliper does not release (brake drags): Seized piston, corrosion"><span class="t-title">Caliper does not release (brake drags)</span><br><span class="cause">Seized piston, corrosion</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Hot disc and pads → Dragging-brake alarm; wheel and disc damage">Hot disc and pads <span class="muted">→ Dragging-brake alarm; wheel and disc damage</span></span>
+    <span class="clamp1 muted" title="Detection: Brake monitoring in TCMS; A inspection"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Brake monitoring in TCMS; A inspection</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.030</b><span class="minibar"><span style="width:17.6%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per caliper-km; supplier test (sample)">Per caliper-km; supplier test (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per caliper-km; supplier test (sample)">Per caliper-km; supplier test (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-012.html">FM-012</a></td>
+  <td class="fm-col"><div class="clamp3" title="Caliper does not apply: Internal leak, broken spring"><span class="t-title">Caliper does not apply</span><br><span class="cause">Internal leak, broken spring</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="No brake force on one disc → Longer stopping distance">No brake force on one disc <span class="muted">→ Longer stopping distance</span></span>
+    <span class="clamp1 muted" title="Detection: Brake test at daily inspection; brake monitoring"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Brake test at daily inspection; brake monitoring</span></td>
+  <td class="nowrap"><span class="chip sev-Critical">Critical</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. A · causes removal</span></td>
+  <td class="n pred rate"><b>0.010</b><span class="minibar"><span style="width:5.866666666666667%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per caliper-km; supplier test (sample)">Per caliper-km; supplier test (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per caliper-km; supplier test (sample)">Per caliper-km; supplier test (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-015.html">Brake pad</a><span class="code">MB.BC.BP</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-013.html">FM-013</a></td>
+  <td class="fm-col"><div class="clamp3" title="Pad worn below limit before the planned change: Higher braking duty than assumed"><span class="t-title">Pad worn below limit before the planned change</span><br><span class="cause">Higher braking duty than assumed</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Metal-to-disc contact → Disc damage, reduced braking">Metal-to-disc contact <span class="muted">→ Disc damage, reduced braking</span></span>
+    <span class="clamp1 muted" title="Detection: Pad thickness check at A"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Pad thickness check at A</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.020</b><span class="minibar"><span style="width:11.733333333333334%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per pad-km; wear test spread (sample)">Per pad-km; wear test spread (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per pad-km; wear test spread (sample)">Per pad-km; wear test spread (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-016.html">Earthing brush</a><span class="code">MB.EB</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-014.html">FM-014</a></td>
+  <td class="fm-col"><div class="clamp3" title="Brush worn out or poor contact: Normal wear, contamination"><span class="t-title">Brush worn out or poor contact</span><br><span class="cause">Normal wear, contamination</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Current passes through the axle bearings → Bearing damage over time (see bearing overheat)">Current passes through the axle bearings <span class="muted">→ Bearing damage over time (see bearing overheat)</span></span>
+    <span class="clamp1 muted" title="Detection: Brush length check at B"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Brush length check at B</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">causes removal</span></td>
+  <td class="n pred rate"><b>0.030</b><span class="minibar"><span style="width:17.6%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per brush-km; datasheet (sample)">Per brush-km; datasheet (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per brush-km; datasheet (sample)">Per brush-km; datasheet (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-012.html">Traction gearbox</a><span class="code">MB.GB</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-009.html">FM-009</a></td>
+  <td class="fm-col"><div class="clamp3" title="Oil leak: Seal wear"><span class="t-title">Oil leak</span><br><span class="cause">Seal wear</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Low oil level → None at first; gear damage if not found">Low oil level <span class="muted">→ None at first; gear damage if not found</span></span>
+    <span class="clamp1 muted" title="Detection: Visual at A; oil level at B"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Visual at A; oil level at B</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    </td>
+  <td class="n pred rate"><b>0.100</b><span class="minibar"><span style="width:58.66666666666667%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per gearbox-km; similar fleets (sample). Fixed on the train: no removal">Per gearbox-km; similar fleets (sample). Fixed on the train: no removal</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per gearbox-km; similar fleets (sample). Fixed on the train: no removal">Per gearbox-km; similar fleets (sample). Fixed on the train: no removal</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-010.html">FM-010</a></td>
+  <td class="fm-col"><div class="clamp3" title="Gear or gearbox bearing damage: Loss of lubrication, overload"><span class="t-title">Gear or gearbox bearing damage</span><br><span class="cause">Loss of lubrication, overload</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Noise, metal in the oil → Traction lost on one axle; train continues with reduced power">Noise, metal in the oil <span class="muted">→ Traction lost on one axle; train continues with reduced power</span></span>
+    <span class="clamp1 muted" title="Detection: Oil check at B (assumed); noise"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Oil check at B (assumed); noise</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.008</b><span class="minibar"><span style="width:4.693333333333334%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per gearbox-km; supplier figure (sample)">Per gearbox-km; supplier figure (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per gearbox-km; supplier figure (sample)">Per gearbox-km; supplier figure (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="chip st st-draft" title="status · revision">draft <span class="rev">· r1</span></span> <form method="post" action="#" data-copy-path="/r/failure_mode/FM-010/approve" style="display:inline-flex"><input type="hidden" name="next" value="/failures?"><button class="xs approve" type="submit" title="Approve rev 1 (the approver must not be the author)"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Approve</button></form></div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-008.html">Levelling valve</a><span class="code">MB.LV</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-006.html">FM-006</a></td>
+  <td class="fm-col"><div class="clamp3" title="Valve sticks open or closed: Dirt, worn seals"><span class="t-title">Valve sticks open or closed</span><br><span class="cause">Dirt, worn seals</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Wrong spring height → Floor height wrong at platforms; ride degraded">Wrong spring height <span class="muted">→ Floor height wrong at platforms; ride degraded</span></span>
+    <span class="clamp1 muted" title="Detection: Height check at B; driver report"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Height check at B; driver report</span></td>
+  <td class="nowrap"><span class="chip sev-Negligible">Negligible</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">causes removal</span></td>
+  <td class="n pred rate"><b>0.040</b><span class="minibar"><span style="width:23.46666666666667%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per valve-km; datasheet (sample)">Per valve-km; datasheet (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per valve-km; datasheet (sample)">Per valve-km; datasheet (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-017.html">Speed sensor</a><span class="code">MB.SS</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-015.html">FM-015</a></td>
+  <td class="fm-col"><div class="clamp3" title="No signal or erratic signal: Cable damage, sensor failure"><span class="t-title">No signal or erratic signal</span><br><span class="cause">Cable damage, sensor failure</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Wrong speed from one axle → Wheel-slide protection and odometry degraded; TCMS fault">Wrong speed from one axle <span class="muted">→ Wheel-slide protection and odometry degraded; TCMS fault</span></span>
+    <span class="clamp1 muted" title="Detection: TCMS diagnostics"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> TCMS diagnostics</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.120</b><span class="minibar"><span style="width:70.4%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per sensor-km; datasheet (sample)">Per sensor-km; datasheet (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per sensor-km; datasheet (sample)">Per sensor-km; datasheet (sample)</span></td>
+  <td class="n obs">9</td>
+  <td class="n obs rate"><span class="band" title="90% confidence band of the observed rate">0.09–0.30</span><b>0.170</b><span class="minibar o"><span style="width:100.0%"></span></span>
+    <span class="basis-2" title="Observed basis: 52.8 M item-km · 2026-01-01 to 2026-10-31">52.8 M item-km · 2026-01-01 to 2026-10-31</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="52.8 M item-km · 2026-01-01 to 2026-10-31">2026-01-01 to 2026-10-31</span><span class="t-sub">52.8 M item-km</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-009.html">Secondary vertical damper</a><span class="code">MB.VD</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-007.html">FM-007</a></td>
+  <td class="fm-col"><div class="clamp3" title="Oil leak, loss of damping: Seal wear"><span class="t-title">Oil leak, loss of damping</span><br><span class="cause">Seal wear</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="No damping → Ride comfort degraded">No damping <span class="muted">→ Ride comfort degraded</span></span>
+    <span class="clamp1 muted" title="Detection: Visual at A inspection"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Visual at A inspection</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">causes removal</span></td>
+  <td class="n pred rate"><b>0.080</b><span class="minibar"><span style="width:46.93333333333334%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per damper-km; supplier test (sample)">Per damper-km; supplier test (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per damper-km; supplier test (sample)">Per damper-km; supplier test (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-003.html">Motor wheelset</a><span class="code">MB.WS</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-003.html">FM-003</a></td>
+  <td class="fm-col"><div class="clamp3" title="Wheel flat: Wheel slide under braking at low adhesion"><span class="t-title">Wheel flat</span><br><span class="cause">Wheel slide under braking at low adhesion</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Flat spot on the tread → Noise and vibration; speed restriction above the limit">Flat spot on the tread <span class="muted">→ Noise and vibration; speed restriction above the limit</span></span>
+    <span class="clamp1 muted" title="Detection: Driver report; wheel-slide log in TCMS; A inspection"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Driver report; wheel-slide log in TCMS; A inspection</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.060</b><span class="minibar"><span style="width:35.2%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per wheelset-km; similar fleets (sample)">Per wheelset-km; similar fleets (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per wheelset-km; similar fleets (sample)">Per wheelset-km; similar fleets (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-004.html">FM-004</a></td>
+  <td class="fm-col"><div class="clamp3" title="Flange or tread worn beyond limit: Normal wear, mostly in curves"><span class="t-title">Flange or tread worn beyond limit</span><br><span class="cause">Normal wear, mostly in curves</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Profile out of limits → Reprofiling needed">Profile out of limits <span class="muted">→ Reprofiling needed</span></span>
+    <span class="clamp1 muted" title="Detection: Profile measurement"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Profile measurement</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    </td>
+  <td class="n pred rate"><b>—</b>
+    <span class="basis-2" title="Predicted basis: Wear, managed by the measurement task: not a random failure">Wear, managed by the measurement task: not a random failure</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Wear, managed by the measurement task: not a random failure">Wear, managed by the measurement task: not a random failure</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><b>—</b>
+    <span class="basis-2" title="Observed basis: no field data">no field data</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="no field data">no field data</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-004.html">Axle box bearing unit</a><span class="code">MB.WS.BRG</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-001.html">FM-001</a></td>
+  <td class="fm-col"><div class="clamp3" title="Bearing overheats or seizes: Lubricant breakdown, water ingress, or return current through the bearing"><span class="t-title">Bearing overheats or seizes</span><br><span class="cause">Lubricant breakdown, water ingress, or return current through the bearing</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Hot axle box → Train stopped; if not found in time the axle journal can fail">Hot axle box <span class="muted">→ Train stopped; if not found in time the axle journal can fail</span></span>
+    <span class="clamp1 muted" title="Detection: Bearing temperature sensor with alarm in TCMS; wayside hot-box detector where fitted (assumed)"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Bearing temperature sensor with alarm in TCMS; wayside hot-box detector where fitted (assumed)</span></td>
+  <td class="nowrap"><span class="chip sev-Catastrophic">Catastrophic</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. A · causes removal</span></td>
+  <td class="n pred rate"><b>0.020</b><span class="minibar"><span style="width:11.733333333333334%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per bearing-km; supplier bench test plus similar fleets (sample)">Per bearing-km; supplier bench test plus similar fleets (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per bearing-km; supplier bench test plus similar fleets (sample)">Per bearing-km; supplier bench test plus similar fleets (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><span class="band" title="90% upper bound of the observed rate">≤ 0.03</span><b class="muted" title="no events in the imported field data: not a measured zero rate">—</b>
+    
+    <span class="basis-2" title="Observed basis: 105.6 M item-km · 2026-01-01 to 2026-10-31">105.6 M item-km · 2026-01-01 to 2026-10-31</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="105.6 M item-km · 2026-01-01 to 2026-10-31">2026-01-01 to 2026-10-31</span><span class="t-sub">105.6 M item-km</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-002.html">FM-002</a></td>
+  <td class="fm-col"><div class="clamp3" title="Spalling or noise found at inspection: Rolling-contact fatigue"><span class="t-title">Spalling or noise found at inspection</span><br><span class="cause">Rolling-contact fatigue</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Rough running → None at first; unit removed at the next depot visit">Rough running <span class="muted">→ None at first; unit removed at the next depot visit</span></span>
+    <span class="clamp1 muted" title="Detection: Noise at A inspection; vibration check at G"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Noise at A inspection; vibration check at G</span></td>
+  <td class="nowrap"><span class="chip sev-Marginal">Marginal</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">causes removal</span></td>
+  <td class="n pred rate"><b>0.050</b><span class="minibar"><span style="width:29.333333333333336%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per bearing-km; supplier rating life (sample)">Per bearing-km; supplier rating life (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per bearing-km; supplier rating life (sample)">Per bearing-km; supplier rating life (sample)</span></td>
+  <td class="n obs">1</td>
+  <td class="n obs rate"><span class="band" title="90% confidence band of the observed rate">0.00–0.04</span><b>0.009</b><span class="minibar o"><span style="width:5.555555555555556%"></span></span>
+    <span class="basis-2" title="Observed basis: 105.6 M item-km · 2026-01-01 to 2026-10-31">105.6 M item-km · 2026-01-01 to 2026-10-31</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="105.6 M item-km · 2026-01-01 to 2026-10-31">2026-01-01 to 2026-10-31</span><span class="t-sub">105.6 M item-km</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+<tr class="grp"><td colspan="10"><span style="display:flex;align-items:center;gap:10px"><svg class="i " width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /></svg><a class="gname" href="r-position-POS-011.html">Yaw damper</a><span class="code">MB.YD</span>
+  
+  <span style="margin-left:auto"><a class="btn ghost xs" href="r-failure_mode-new.html"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> failure mode here</a></span></span></td></tr>
+
+
+
+
+<tr>
+  <td class="nowrap"><a class="code" href="r-failure_mode-FM-008.html">FM-008</a></td>
+  <td class="fm-col"><div class="clamp3" title="Loss of yaw damping: Seal wear, internal valve failure"><span class="t-title">Loss of yaw damping</span><br><span class="cause">Seal wear, internal valve failure</span></div></td>
+  <td class="small eff-col"><span class="clamp" title="Bogie yaw not damped → Possible bogie hunting at high speed; higher track forces">Bogie yaw not damped <span class="muted">→ Possible bogie hunting at high speed; higher track forces</span></span>
+    <span class="clamp1 muted" title="Detection: Visual at A; instability monitoring in TCMS if fitted (assumption)"><svg class="i " width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /></svg> Visual at A; instability monitoring in TCMS if fitted (assumption)</span></td>
+  <td class="nowrap"><span class="chip sev-Critical">Critical</span>
+    
+    <span class="t-sub xs" title="Contract failure category · whether it causes a removal">Cat. B · causes removal</span></td>
+  <td class="n pred rate"><b>0.050</b><span class="minibar"><span style="width:29.333333333333336%"></span></span>
+    <span class="basis-2" title="Predicted basis: Per damper-km; supplier test (sample)">Per damper-km; supplier test (sample)</span></td>
+  <td class="pred small basis-col"><span class="clamp" title="Per damper-km; supplier test (sample)">Per damper-km; supplier test (sample)</span></td>
+  <td class="n obs">0</td>
+  <td class="n obs rate"><span class="band" title="90% upper bound of the observed rate">≤ 0.06</span><b class="muted" title="no events in the imported field data: not a measured zero rate">—</b>
+    
+    <span class="basis-2" title="Observed basis: 52.8 M item-km · 2026-01-01 to 2026-10-31">52.8 M item-km · 2026-01-01 to 2026-10-31</span></td>
+  <td class="obs small basis-col"><span class="clamp" title="52.8 M item-km · 2026-01-01 to 2026-10-31">2026-01-01 to 2026-10-31</span><span class="t-sub">52.8 M item-km</span></td>
+  <td><div class="cell-stack"><span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span> </div></td>
+</tr>
+
+</tbody></table></div>
+
+<h2 class="sec" id="hazards"><svg class="i " width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /></svg> Hazards <span class="count">3</span></h2>
+<p class="lead">Severity and likelihood are the analyst's assessment, not calculated from failure rates. The system records the acceptance; it does not give it.</p>
+<div class="grid g3">
+
+<article class="card hz">
+  <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+    <div><a class="code" href="r-hazard-HZ-001.html">HZ-001</a>
+      <h3 style="margin-top:3px"><a href="r-hazard-HZ-001.html" style="color:inherit">Axle journal failure leading to derailment</a></h3></div>
+    <span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span>
+  </div>
+  <div class="risk"><span class="chip risk-Tolerable">Tolerable</span>
+    <span class="chip sev-Catastrophic">Catastrophic</span>
+    <span class="chip plain">Improbable</span></div>
+  <p class="small muted" style="margin:0">Bearing overheats and is not found before it fails; any speed.</p>
+  <dl>
+    <dt>Caused by</dt><dd><a href="r-failure_mode-FM-001.html">FM-001 · Bearing overheats or seizes</a><br><a href="r-failure_mode-FM-014.html">FM-014 · Brush worn out or poor contact</a></dd>
+    <dt>Evidence</dt><dd class="small">Bearing qualification report; TCMS alarm specification (sample refs)</dd>
+    <dt>Acceptance</dt><dd><span class="chip warn">proposed</span></dd>
+  </dl>
+  <div class="controls"><b class="xs muted" style="display:block;margin-bottom:3px">CONTROLS</b><pre class="steps">1. Bearing temperature alarm with stop-train instruction (TCMS).
+2. Earthing brush length check at every B.
+3. Bearing unit replaced after any confirmed overheat.</pre></div>
+  
+</article>
+
+<article class="card hz">
+  <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+    <div><a class="code" href="r-hazard-HZ-002.html">HZ-002</a>
+      <h3 style="margin-top:3px"><a href="r-hazard-HZ-002.html" style="color:inherit">Reduced braking on one axle: longer stopping distance</a></h3></div>
+    <span class="st-ok " title="approved · revision 1"><span class="sr">approved </span>r1</span>
+  </div>
+  <div class="risk"><span class="chip risk-Tolerable">Tolerable</span>
+    <span class="chip sev-Critical">Critical</span>
+    <span class="chip plain">Remote</span></div>
+  <p class="small muted" style="margin:0">Caliper fails to apply or pads worn out; worst at high speed on a falling gradient.</p>
+  <dl>
+    <dt>Caused by</dt><dd><a href="r-failure_mode-FM-012.html">FM-012 · Caliper does not apply</a><br><a href="r-failure_mode-FM-013.html">FM-013 · Pad worn below limit before the planned change</a></dd>
+    <dt>Evidence</dt><dd class="small">Brake system safety case section 4 (sample ref)</dd>
+    <dt>Acceptance</dt><dd><span class="chip good">accepted</span><span class="t-sub">Safety manager (sample), 2026-11-10 · Hazard review minutes HR-07 (sample)</span></dd>
+  </dl>
+  <div class="controls"><b class="xs muted" style="display:block;margin-bottom:3px">CONTROLS</b><pre class="steps">Brake test at daily inspection; brake monitoring in TCMS; pad check at A.</pre></div>
+  
+</article>
+
+<article class="card hz">
+  <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">
+    <div><a class="code" href="r-hazard-HZ-003.html">HZ-003</a>
+      <h3 style="margin-top:3px"><a href="r-hazard-HZ-003.html" style="color:inherit">Bogie hunting at high speed</a></h3></div>
+    <span class="chip st st-draft" title="status · revision">draft <span class="rev">· r1</span></span>
+  </div>
+  <div class="risk"><span class="chip risk-Tolerable">Tolerable</span>
+    <span class="chip sev-Critical">Critical</span>
+    <span class="chip plain">Improbable</span></div>
+  <p class="small muted" style="margin:0">Yaw damping lost on a bogie; speed above 120 km/h.</p>
+  <dl>
+    <dt>Caused by</dt><dd><a href="r-failure_mode-FM-008.html">FM-008 · Loss of yaw damping</a></dd>
+    <dt>Evidence</dt><dd class="small">Vehicle dynamics report (sample ref)</dd>
+    <dt>Acceptance</dt><dd><span class="chip warn">open</span></dd>
+  </dl>
+  <div class="controls"><b class="xs muted" style="display:block;margin-bottom:3px">CONTROLS</b><pre class="steps">Yaw damper check at A; exchange at G; speed restriction on driver report.</pre></div>
+  <div><form method="post" action="#" data-copy-path="/r/hazard/HZ-003/approve" style="display:inline-flex"><input type="hidden" name="next" value="/failures?"><button class="xs approve" type="submit" title="Approve rev 1 (the approver must not be the author)"><svg class="i " width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg> Approve</button></form></div>
+</article>
+
+</div>
+
+  </main>
+</div>
+</div>
+<aside class="askp" id="askp" aria-label="Ask VisBo" hidden>
+  <div class="askp-head"><div class="askp-id"><visbo-mark id="vb-ask" state="idle" size="40" eyes="off" theme="light" label="VisBo: idle"></visbo-mark><div><b>Ask VisBo</b><span class="askp-st" id="vb-ask-st" aria-live="polite">Ready</span></div></div>
+    <div class="askp-tools"><button type="button" class="ghost xs btn" id="askp-new" onclick="askNew()" hidden><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="M12 5v14" /></svg> New question</button>
+    <button type="button" class="ghost xs btn" onclick="askClose()" aria-label="Close"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg></button></div></div>
+  <div class="askp-out" id="askout">
+    <div class="askp-empty" id="askp-empty">
+      <p class="askp-hello"><b>Ask about this register.</b> VisBo answers from the records only and shows which ones it used.</p>
+      <div class="askp-cards"><button type="button" class="askp-card" data-ask="What is missing for the motor bogie?"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 17 2 2 4-4" /> <path d="m3 7 2 2 4-4" /> <path d="M13 6h8" /> <path d="M13 12h8" /> <path d="M13 18h8" /></svg><span>What is missing for the motor bogie?</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button><button type="button" class="askp-card" data-ask="Which parts fail more often than predicted?"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg><span>Which parts fail more often than predicted?</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button><button type="button" class="askp-card" data-ask="What waits for approval?"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg><span>What waits for approval?</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button><button type="button" class="askp-card" data-ask="Tell me about BRG-130"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /></svg><span>Tell me about BRG-130</span><svg class="i " width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button></div>
+    </div>
+    <div id="askthread" aria-live="polite"></div>
+  </div>
+  <form class="askp-form" action="#" data-copy-path="/ask" method="get" onsubmit="return askSend(this)">
+    <input type="hidden" name="page" value="/failures">
+    <input type="text" name="q" id="askq" placeholder="Ask about a part, a gap or a figure…" aria-label="Your question" autocomplete="off">
+    <button type="submit" class="sm" aria-label="Ask"><svg class="i " width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></button>
+  </form>
+  <p class="askp-foot">Answers come from the register only. VisBo never approves or decides.</p>
+</aside>
+<div class="vb-toast" id="vb-toast" role="status" hidden><visbo-mark state="working" size="24" eyes="off" theme="light" label="VisBo is working"></visbo-mark><span></span></div>
+<script>
+window.VISBO_EYES='off';
+/* the import helper and datasheet drafting: while the server reads the file, VisBo shows it is working */
+document.addEventListener('submit',function(e){var f=e.target;if(!f.matches('form[data-vb-read]')||e.defaultPrevented)return;
+  var fi=f.querySelector('input[type=file]'),sm=f.querySelector('input[name=sample]'),n=(fi&&fi.files[0]&&fi.files[0].name)||(sm&&sm.value);if(!n)return;
+  var t=document.getElementById('vb-toast');t.querySelector('span').innerHTML='<b>VisBo is reading</b> '+n.replace(/[<>&]/g,'')+'…';t.hidden=false;});
+window.addEventListener('pageshow',function(){var t=document.getElementById('vb-toast');if(t)t.hidden=true;});
+/* Ask VisBo: a short thread kept for this browser tab; answers come from the server (or, in the click-through copy, from askFetch) */
+var ASK_KEY='ils-ask-thread';
+function askVb(st,words){var m=document.getElementById('vb-ask'),t=document.getElementById('vb-ask-st');if(m){m.setAttribute('state',st);m.setAttribute('label','VisBo: '+words);}if(t)t.textContent=words;}
+function askStore(){try{var th=document.getElementById('askthread');sessionStorage.setItem(ASK_KEY,th.innerHTML);}catch(e){}}
+function askShow(){var th=document.getElementById('askthread'),has=!!th.querySelector('.vb-turn');document.getElementById('askp-empty').hidden=has;document.getElementById('askp-new').hidden=!has;}
+function askOpen(){var p=document.getElementById('askp');p.hidden=false;askVb('listening','Listening');document.getElementById('askq').focus();}
+function askClose(){document.getElementById('askp').hidden=true;}
+function askNew(){document.getElementById('askthread').innerHTML='';askStore();askShow();askVb('listening','Listening');document.getElementById('askq').focus();}
+function askEsc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function askFetchServer(q,page){var f=document.querySelector('.askp-form');
+  return fetch(f.getAttribute('action')+'?fragment=1&page='+encodeURIComponent(page||'')+'&q='+encodeURIComponent(q)).then(function(r){if(!r.ok)throw r;return r.text();});}
+function askRun(q){var th=document.getElementById('askthread'),f=document.querySelector('.askp-form'),turn=document.createElement('div');
+  turn.className='vb-turn vb-wait';
+  turn.innerHTML='<div class="vb-q"><span>'+askEsc(q)+'</span></div><div class="vb-a vb-thinking"><visbo-mark state="thinking" size="16" eyes="'+(window.VISBO_EYES||'off')+'" theme="light" label="VisBo: thinking"></visbo-mark> Looking in the register…</div>';
+  th.appendChild(turn);askShow();turn.scrollIntoView({block:'start'});askVb('thinking','Thinking: looking in the register…');
+  (window.askFetch||askFetchServer)(q,f.page.value).then(function(html){
+    var box=document.createElement('div');box.innerHTML=html;var t=box.querySelector('.vb-turn')||box;turn.replaceWith(t);t.scrollIntoView({block:'start'});
+    askStore();askVb('done','Done: answer below');
+    setTimeout(function(){var m=document.getElementById('vb-ask');if(m&&m.getAttribute('state')==='done')askVb('idle','Ready');},4000);
+  }).catch(function(){turn.classList.remove('vb-wait');turn.querySelector('.vb-a').className='vb-a vb-err';turn.querySelector('.vb-a').textContent='Could not reach the server. Try again in a moment.';askVb('error','Could not reach the server');});}
+function askSend(f){var q=f.q.value.trim();if(!q)return false;f.q.value='';askRun(q);return false;}
+document.addEventListener('click',function(e){var p=document.getElementById('askp');if(!p||!p.contains(e.target))return;
+  var b=e.target.closest('[data-ask]');if(b){e.preventDefault();askRun(b.getAttribute('data-ask'));return;}
+  var a=e.target.closest('a[href]');if(a&&!a.hasAttribute('data-copy-off')){try{sessionStorage.setItem(ASK_KEY+'-open','1');}catch(x){}}});
+(function(){var th=document.getElementById('askthread');if(!th)return;var h='',open='';
+  try{h=sessionStorage.getItem(ASK_KEY)||'';open=sessionStorage.getItem(ASK_KEY+'-open')||'';sessionStorage.removeItem(ASK_KEY+'-open');}catch(e){}
+  th.innerHTML=h;th.querySelectorAll('.vb-wait').forEach(function(t){t.remove();});askShow();
+  if(open){document.getElementById('askp').hidden=false;askVb('idle','Ready');var last=th.querySelector('.vb-turn:last-child');if(last)last.scrollIntoView({block:'start'});}})();
+document.addEventListener('keydown',function(e){if(e.key==='Escape')askClose();});
+</script>
+<div class="copy-toast" id="copy-toast" role="status" hidden></div><script src="static/copy-data.js"></script><script src="static/copy.js"></script>
+</body></html>
